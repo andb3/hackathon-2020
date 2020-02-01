@@ -1,0 +1,9 @@
+.header{
+    font-size:  50pt;
+}
+.bulletPoints {  
+    list-style-image: url('face-24px.svg'); 
+ }  
+.underbullet{
+    font-size: 10pt;
+}
