@@ -11,19 +11,18 @@ var allThreads = [
     new Thread(3219084, "Anyone want to clean up the river?", 2, 1),
     new Thread(7584435, "Thoughts on NYC Bill 3948?", 3, 1),
     new Thread(3209745, "Garbage Services", 1, 1),
-    new Thread(8754239, "Weekly discussions", 4, 1)
+    new Thread(8754239, "Weekly discussions", 4, 1),
+    new Thread(3442389, "DC Test", 4, 2)
 ];
 
 function getThreadsFor(regionID){
     return allThreads.filter(thread => thread.regionID == regionID);
 }
 
-console.log("Alert")
 var threads = getThreadsFor(1);
-/*hreads.forEach(thread => {
-    node = document.createTextNode(thread.name);
+threads.forEach(thread => {
+    node = document.createElement("li");
+    node.innerHTML = thread.name;
     document.getElementById("forum_holder").appendChild(node);
 }
 )
-*/
-document.getElementById("region_name").innerHTML = "Washington, DC"
