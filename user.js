@@ -3,7 +3,7 @@ class User{
         this.id = id;
         this.username = username;
         this.displayName = displayName;
-        this.registered = registered
+        this.registered = registered;
     }
 }
 
@@ -12,4 +12,4 @@ var allUsers = [
     new User(2, "gwashington", "George Washington", []),
     new User(3, "ahamilton", "Alexander Hamilton", []),
     new User(4, "jmadison", "James Madison", [])
-]
+];
